@@ -83,18 +83,26 @@
     </fieldset>
       <hr>
       <fieldset>
-          <legend class="w-auto"><small>Token trnasfer</small></legend>
+          <legend class="w-auto"><small>Set Max Interest Limit</small></legend>
         <div class="form-group col-md-6 col-sm-6 col-xs-12">
-            <label>Trnasfer recipient (address)<span class="required-star">*</span></label>
+            <label>Allowable Interest  (address)<span class="required-star">*</span></label>
             <input type="text" class="form-control" name="exp_amount" id="exp_amount"
-                placeholder="Enter recipient (address)"  >
+                placeholder="Enter _allowableInterest (uint256)"  >
         </div>
-        <div class="form-group col-md-6 col-sm-6 col-xs-12">
-            <label>Trnasfer amount (uint256)<span class="required-star">*</span></label>
-            <input type="text" class="form-control" name="exp_enterBy" id="exp_enterBy"
-                placeholder="Enter amount (uint256)"  >
-        </div>
-      </fieldset>    
+        <br>
+        <button type="submit">setMaxInterestLimite</button>
+      </fieldset>
+      <hr>
+      <fieldset>
+        <legend class="w-auto"><small>White List User Address</small></legend>
+      <div class="form-group col-md-6 col-sm-6 col-xs-12">
+          <label>User (address)<span class="required-star">*</span></label>
+          <input type="text" class="form-control" name="exp_amount" id="exp_amount"
+              placeholder="Enter User (address)"  >
+      </div>
+      <br>
+      <button type="submit">whiteList</button>
+    </fieldset>    
   </div>
 </fieldset>
 
