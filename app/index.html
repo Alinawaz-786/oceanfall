@@ -1,93 +1,97 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>oceanfall-semi-web</title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <script src="./app.js"></script>
-<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
 </head>
+
 <body>
-  <a class="github-fork-ribbon" href="https://github.com/Alinawaz-786/oceanfall" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+  <a class="github-fork-ribbon" href="https://github.com/Alinawaz-786/oceanfall" data-ribbon="Fork me on GitHub"
+    title="Fork me on GitHub">Fork me on GitHub</a>
   <h1>oceanfall-semi-web</h1>
   <fieldset>
     <legend class="w-auto"><small>Token Information</small></legend>
     <div class="row">
       <fieldset>
-          <legend class="w-auto"><small>Token Mint</small></legend>
-          <div class="form-group col-md-6 col-sm-6 col-xs-12">
-              <label>Mint<span class="required-star"></span></label>
-              <input type="text" class="form-control" name="exp_type" id="exp_type"
-                  placeholder="Enter Income Type" value="" >
-          </div>
-          <br>
-          <button type="submit">Mint</button>
-      </fieldset>
-        <hr>
-        <fieldset>
-            <legend class="w-auto"><small>Token trnasfer</small></legend>
-          <div class="form-group col-md-6 col-sm-6 col-xs-12">
-              <label>Trnasfer recipient (address)<span class="required-star">*</span></label>
-              <input type="text" class="form-control" name="exp_amount" id="exp_amount"
-                  placeholder="Enter recipient (address)"  >
-          </div>
-          <div class="form-group col-md-6 col-sm-6 col-xs-12">
-              <label>Trnasfer amount (uint256)<span class="required-star">*</span></label>
-              <input type="text" class="form-control" name="exp_enterBy" id="exp_enterBy"
-                  placeholder="Enter amount (uint256)"  >
-          </div>
-          <br>
-          <button type="submit">Transfer</button>
-        </fieldset>    
-    </div>
-</fieldset>
-<hr>
-
-<fieldset>
-  <legend class="w-auto"><small>Admin Side Working</small></legend>
-  <div class="row">
-    <fieldset>
-        <legend class="w-auto"><small>Deploy Capital Reserve</small></legend>
+        <legend class="w-auto"><small>Token Mint</small></legend>
         <div class="form-group col-md-6 col-sm-6 col-xs-12">
-            <label>Deploy Capital Reserve<span class="required-star"></span></label>
-            <input type="text" class="form-control" name="exp_type" id="exp_type"
-                placeholder="Enter Deploy Capital Reserve address" value="" >
+          <label>Mint<span class="required-star"></span></label>
+          <input type="text" class="form-control" name="exp_type" id="exp_type" placeholder="Enter Income Type"
+            value="">
+        </div>
+        <br>
+        <button type="submit">Mint</button>
+      </fieldset>
+      <hr>
+      <fieldset>
+        <legend class="w-auto"><small>Token trnasfer</small></legend>
+        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+          <label>Trnasfer recipient (address)<span class="required-star">*</span></label>
+          <input type="text" class="form-control" name="exp_amount" id="exp_amount"
+            placeholder="Enter recipient (address)">
         </div>
         <div class="form-group col-md-6 col-sm-6 col-xs-12">
-            <label>Reserve Goverance<span class="required-star"></span></label>
-            <input type="text" class="form-control" name="exp_type" id="exp_type"
-                placeholder="Enter Reserve Goverance address" value="" >
+          <label>Trnasfer amount (uint256)<span class="required-star">*</span></label>
+          <input type="text" class="form-control" name="exp_enterBy" id="exp_enterBy"
+            placeholder="Enter amount (uint256)">
+        </div>
+        <br>
+        <button type="submit">Transfer</button>
+      </fieldset>
+    </div>
+  </fieldset>
+  <hr>
+
+  <fieldset>
+    <legend class="w-auto"><small>Admin Side Working</small></legend>
+    <div class="row">
+      <fieldset>
+        <legend class="w-auto"><small>Deploy Capital Reserve</small></legend>
+        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+          <label>Deploy Capital Reserve<span class="required-star"></span></label>
+          <input type="text" class="form-control" name="exp_type" id="exp_type"
+            placeholder="Enter Deploy Capital Reserve address" value="">
+        </div>
+        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+          <label>Reserve Goverance<span class="required-star"></span></label>
+          <input type="text" class="form-control" name="exp_type" id="exp_type"
+            placeholder="Enter Reserve Goverance address" value="">
         </div>
         <div class="form-group col-md-6 col-sm-6 col-xs-12">
           <label>Regulator<span class="required-star"></span></label>
-          <input type="text" class="form-control" name="exp_type" id="exp_type"
-              placeholder="Enter Regulator address" value="" >
+          <input type="text" class="form-control" name="exp_type" id="exp_type" placeholder="Enter Regulator address"
+            value="">
         </div>
         <div class="form-group col-md-6 col-sm-6 col-xs-12">
           <label>Token<span class="required-star"></span></label>
-          <input type="text" class="form-control" name="exp_type" id="exp_type"
-              placeholder="Enter Token address" value="" >
+          <input type="text" class="form-control" name="exp_type" id="exp_type" placeholder="Enter Token address"
+            value="">
         </div>
         <div class="form-group col-md-6 col-sm-6 col-xs-12">
           <label>Interest Rate<span class="required-star"></span></label>
           <input type="text" class="form-control" name="exp_type" id="exp_type"
-              placeholder="Enter Interest Rate uint256" value="" >
+            placeholder="Enter Interest Rate uint256" value="">
         </div>
         <div class="form-group col-md-6 col-sm-6 col-xs-12">
           <label>Interval Seconds<span class="required-star"></span></label>
           <input type="text" class="form-control" name="exp_type" id="exp_type"
-              placeholder="Enter Interval Seconds uint256" value="" >
+            placeholder="Enter Interval Seconds uint256" value="">
         </div>
         <br>
         <button type="submit">Deploy Capital Reserve</button>
-    </fieldset>
+      </fieldset>
       <hr>
       <fieldset>
-          <legend class="w-auto"><small>Set Max Interest Limit</small></legend>
+        <legend class="w-auto"><small>Set Max Interest Limit</small></legend>
         <div class="form-group col-md-6 col-sm-6 col-xs-12">
-            <label>Allowable Interest  (address)<span class="required-star">*</span></label>
-            <input type="text" class="form-control" name="exp_amount" id="exp_amount"
-                placeholder="Enter _allowableInterest (uint256)"  >
+          <label>Allowable Interest (address)<span class="required-star">*</span></label>
+          <input type="text" class="form-control" name="exp_amount" id="exp_amount"
+            placeholder="Enter _allowableInterest (uint256)">
         </div>
         <br>
         <button type="submit">setMaxInterestLimite</button>
@@ -95,17 +99,82 @@
       <hr>
       <fieldset>
         <legend class="w-auto"><small>White List User Address</small></legend>
-      <div class="form-group col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group col-md-6 col-sm-6 col-xs-12">
           <label>User (address)<span class="required-star">*</span></label>
+          <input type="text" class="form-control" name="exp_amount" id="exp_amount" placeholder="Enter User (address)">
+        </div>
+        <br>
+        <button type="submit">whiteList</button>
+      </fieldset>
+      <hr>
+      <fieldset>
+        <legend class="w-auto"><small>Capital Reserve</small></legend>
+        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+          <label>Approve (address)<span class="required-star">*</span></label>
           <input type="text" class="form-control" name="exp_amount" id="exp_amount"
-              placeholder="Enter User (address)"  >
-      </div>
-      <br>
-      <button type="submit">whiteList</button>
-    </fieldset>    
-  </div>
-</fieldset>
+            placeholder="Enter approve (address)">
+        </div>
+        <br>
+        <button type="submit">approve</button>
+      </fieldset>
+      <hr>
+      <fieldset>
+        <legend class="w-auto"><small>Transection Section</small></legend>
+        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+          <label>claim Pending Transection (btyes32)<span class="required-star">*</span></label>
+          <input type="text" class="form-control" name="exp_amount" id="exp_amount"
+            placeholder="Enter _txnId (btyes32)">
+        </div>
+        <br>
+        <button type="submit">Claim Pending Transection</button>
+        <hr>
+        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+          <label>Cancel Pending Transection (btyes32)<span class="required-star">*</span></label>
+          <input type="text" class="form-control" name="exp_amount" id="exp_amount"
+            placeholder="Enter _txnId (btyes32)">
+        </div>
+        <br>
+        <button type="submit">Cancel Pending Transection</button>
+      </fieldset>
+      <hr>
+      <fieldset>
+        <legend class="w-auto"><small>Deposit to Capital Reserve Pool</small></legend>
+        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+          <label>Deposit to Capital Reserve Pool (uint256)<span class="required-star">*</span></label>
+          <input type="text" class="form-control" name="exp_amount" id="exp_amount"
+            placeholder="Enter Deposit to Capital Reserve Pool (uint256)">
+        </div>
+        <br>
+        <button type="submit">Deposit to Capital Reserve Pool</button>
+        <hr>
+        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+          <label>Deposit to Interest Pool (uint256)<span class="required-star">*</span></label>
+          <input type="text" class="form-control" name="exp_amount" id="exp_amount"
+            placeholder="Enter _txnId (btyes32)">
+        </div>
+        <br>
+        <button type="submit">Deposit to Interest Pool</button>
+      </fieldset>
+      <hr>
+      <fieldset>
+        <legend class="w-auto"><small>Recover Accidental</small></legend>
+        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+          <label>Token (address)<span class="required-star">*</span></label>
+          <input type="text" class="form-control" name="exp_amount" id="exp_amount"
+            placeholder="Enter token (address)">
+        </div>
+        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+          <label>_user (address)<span class="required-star">*</span></label>
+          <input type="text" class="form-control" name="exp_amount" id="exp_amount"
+            placeholder="Enter user (address)">
+        </div>
+        <br>
+        <button type="submit">Recover Accidental Transfer</button>
+      </fieldset>
+    </div>
+  </fieldset>
 
 
 </body>
+
 </html>
