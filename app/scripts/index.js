@@ -7,16 +7,13 @@ import Web3 from 'web3'
 import contract from 'truffle-contract'
 
 // Import our contract artifacts and turn them into usable abstractions.
-import CoinArtifact from '../../build/contracts/Coin.json'
+import CurrencyCoinArtifact from '../../build/contracts/Currency.json'
 // import ? from '../../build/contracts/?.json'
 import { networks } from './networks'
 
-const Gsn = require('@opengsn/provider')
-
-const RelayProvider = Gsn.RelayProvider
 
 // Coin is our usable abstraction, which we'll use through the code below.
-const Coin = contract(CoinArtifact)
+const CurrencyCoin = contract(CurrencyCoinArtifact)
 
 // The following code is simple to show off interacting with your contracts.
 // As your needs grow you will likely need to change its form and structure.
