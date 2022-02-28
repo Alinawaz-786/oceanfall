@@ -20,6 +20,8 @@
               <input type="text" class="form-control" name="exp_type" id="exp_type"
                   placeholder="Enter Income Type" value="" >
           </div>
+          <br>
+          <button type="submit">Mint</button>
       </fieldset>
         <hr>
         <fieldset>
@@ -34,8 +36,66 @@
               <input type="text" class="form-control" name="exp_enterBy" id="exp_enterBy"
                   placeholder="Enter amount (uint256)"  >
           </div>
+          <br>
+          <button type="submit">Transfer</button>
         </fieldset>    
     </div>
+</fieldset>
+<hr>
+
+<fieldset>
+  <legend class="w-auto"><small>Admin Side Working</small></legend>
+  <div class="row">
+    <fieldset>
+        <legend class="w-auto"><small>Deploy Capital Reserve</small></legend>
+        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+            <label>Deploy Capital Reserve<span class="required-star"></span></label>
+            <input type="text" class="form-control" name="exp_type" id="exp_type"
+                placeholder="Enter Deploy Capital Reserve address" value="" >
+        </div>
+        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+            <label>Reserve Goverance<span class="required-star"></span></label>
+            <input type="text" class="form-control" name="exp_type" id="exp_type"
+                placeholder="Enter Reserve Goverance address" value="" >
+        </div>
+        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+          <label>Regulator<span class="required-star"></span></label>
+          <input type="text" class="form-control" name="exp_type" id="exp_type"
+              placeholder="Enter Regulator address" value="" >
+        </div>
+        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+          <label>Token<span class="required-star"></span></label>
+          <input type="text" class="form-control" name="exp_type" id="exp_type"
+              placeholder="Enter Token address" value="" >
+        </div>
+        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+          <label>Interest Rate<span class="required-star"></span></label>
+          <input type="text" class="form-control" name="exp_type" id="exp_type"
+              placeholder="Enter Interest Rate uint256" value="" >
+        </div>
+        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+          <label>Interval Seconds<span class="required-star"></span></label>
+          <input type="text" class="form-control" name="exp_type" id="exp_type"
+              placeholder="Enter Interval Seconds uint256" value="" >
+        </div>
+        <br>
+        <button type="submit">Deploy Capital Reserve</button>
+    </fieldset>
+      <hr>
+      <fieldset>
+          <legend class="w-auto"><small>Token trnasfer</small></legend>
+        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+            <label>Trnasfer recipient (address)<span class="required-star">*</span></label>
+            <input type="text" class="form-control" name="exp_amount" id="exp_amount"
+                placeholder="Enter recipient (address)"  >
+        </div>
+        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+            <label>Trnasfer amount (uint256)<span class="required-star">*</span></label>
+            <input type="text" class="form-control" name="exp_enterBy" id="exp_enterBy"
+                placeholder="Enter amount (uint256)"  >
+        </div>
+      </fieldset>    
+  </div>
 </fieldset>
 
 
