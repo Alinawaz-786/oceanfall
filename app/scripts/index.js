@@ -82,6 +82,7 @@ const App = {
         accounts = accs
         account = accounts[0]
 
+        self.refreshBalance()
       })
     })
   },
@@ -91,16 +92,55 @@ const App = {
     status.innerHTML = message
   },
 
+  addressLink: function (addr) {
+    return '<a href="' + network.addressUrl + addr + '" target="_info">' + addr + '</a>'
+  },
+
   //Currency Token
+
+  refreshBalance: function () {
+    const self = this
+
+    function putItem (name, val) {
+      const item = document.getElementById(name)
+      item.innerHTML = val
+    }
+    function putAddr (name, addr) {
+      putItem(name, self.addressLink(addr))
+    }
+
+    putAddr('address', account)
+
+    let meta
+    CurrencyCoin.deployed().then(function (instance) {
+      meta = instance
+      console.log( account)
+      putAddr('address', account)
+
+      return meta.balanceOf.call(account, { from: account })
+    }).then(function (value) {
+      const balanceElement = document.getElementById('balance')
+      balanceElement.innerHTML = value.valueOf()
+
+    }).catch(function (e) {
+      const fatalmessage = document.getElementById('fatalmessage')
+      console.log(e)
+      if (/mismatch/.test(e)) {
+        fatalmessage.innerHTML = "Wrong network. please switch to 'rinekby' "
+      }
+      self.setStatus('Error getting balance; see log.')
+    })
+  },
   currency_mint: function () {
     const self = this
     const currency_mint = parseInt(document.getElementById('currency_mint').value)
+    alert(currency_mint)
+
     this.setStatus('Initiating transaction... (please wait)')
     let meta
     CurrencyCoin.deployed().then(function (instance) {
       meta = instance
-      return meta.mint(currency_mint,
-        { from: account })
+      return meta.mint(currency_mint)
     }).then(function (res) {
       self.setStatus('Transaction complete!<br>\n' + self.txLink(res.tx))
     }).catch(function (e) {
@@ -324,7 +364,7 @@ const App = {
     const oferd20_amount = parseInt(document.getElementById('oferd20_amount').value)
     OFERC20Contract.deployed().then(function (instance) {
       meta = instance
-      return meta.withdrawFromCapitalReservePool(
+      return meta.transfer(
         oferd20_token_address,
         oferd20_amount,
         { from: account })
