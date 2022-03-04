@@ -1,16 +1,14 @@
-+# Based oceanfall.
+# Based oceanfall.
 
-T
 ## Running the project
 #### The "TL;DR"
-1. Run `yarn install `
-2. Run `yarn run dev` to run metacoin demo on `http://localhost:8080`
+1. Run `npm install`
+2. Run `npm start` to run Based oceanfall demo on `http://localhost:8080`
 3. open a browser, and you can mint, and send coins, with no eth in your (metamask) account
 4. you can also switch to `rinkeby` to see it running there
 
-
+ 
 # oceanfall.
-
 https://rinkeby.etherscan.io/address/0xf9B90356dF8eED3ff94888Aa755c1Bf26874927d#code
 https://rinkeby.etherscan.io/address/0xf9B90356dF8eED3ff94888Aa755c1Bf26874927d#code
 https://rinkeby.etherscan.io/address/0xb724BAE3A725329f5459b13954e99c560609070f#code
